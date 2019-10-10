@@ -6,7 +6,7 @@
 /*   By: danli <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/25 09:52:31 by danli             #+#    #+#             */
-/*   Updated: 2019/10/10 15:35:27 by danli            ###   ########.fr       */
+/*   Updated: 2019/10/10 15:37:55 by danli            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	if (s1 && s2)
-		return (ft_strncmp(s1, s2, n) ? 1 : 0);
+		return (ft_strncmp(s1, s2, n) == 0 ? 1 : 0);
 	return (0);
 }
